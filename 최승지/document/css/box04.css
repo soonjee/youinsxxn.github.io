@@ -1,15 +1,15 @@
 h1 {
     line-height: 100px;
-    background: #f00;
+    background: steelblue;
 }
 
 nav {
     line-height: 100px;
-    background:blue;
+    background: lightsteelblue;
 }
 
 .right {
-    background: #ff0;
+    background: lightblue;
 }
 
 .header01 {
@@ -29,15 +29,15 @@ nav {
 .header04 {
     display: flex;
     justify-content: space-between;
-} 
+}
 
 .header05 {
     display: flex;
-} 
+}
 
 .header05 nav {
     margin: 0 0 0 auto;
-} 
+}
 
 .basic {
     line-height: 100px;
