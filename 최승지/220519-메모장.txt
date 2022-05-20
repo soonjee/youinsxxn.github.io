@@ -1,0 +1,58 @@
+5/19
+* 포지션 씌울땐 이 태그들을 공식처럼 외우자*
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    ㄴ 부모를 찾아가 50% 떨어진다.
+    width: 450px; 
+    height: 350px;
+    background: #f00;
+    transform: translateX(-50%);
+   ㄴ 트렌스폼은 자기 사이즈의 50% 떨어지는 성질. 
+     transform: translateY(-50%);
+   ㄴ 트렌스폼은 두번쓰면 안됨. 링크 태그처럼 위에꺼부터 성질이 먹히기 때문에 하나만 쓴다. 중복사용 X
+   transform: translate(-50%, -50%) 
+   ㄴ 같이 쓸꺼면 이렇게 축약형으로 동시에 써야함.
+
+----------------------------------------------
+마우스가 올라가는 일 : Javascript
+<script>
+        document.querySelector('popup button').addEventListener('click', function () {
+            console.log('바부팅');
+            document.querySelector('popup').style.display = 'none';
+        })
+    </script>
+
+-------------------------------------
+100vh : vh, 화면의 100% 단위라는 말
+
+
+ position: absolute; -> 창이 스크롤 바의 움직임에 따라 내려오지 않음.
+ position: fixed; -> 창이 스크롤 바의 움직임에 따라 내려온다.
+
+
+nav.on {} : nav에 클래스가 붙어있을때 사용.
+----------------------------------------------
+<script>
+        document.querySelector('mpoen').addEventListener('click', function () {
+            document.querySelector('nav').classList.toggle('oo');
+        });
+    </script>
+
+nav {
+    position: fixed;
+    top: 0;
+    left: -500%;
+    width: 500px;
+    height: 100vh;
+    background: #fff;
+    transition: 3s;  
+    ㄴ 열고닫기 기능
+
+   opacity: 0; 
+   ㄴ투명도
+
+transform 자기 자신을 바꿀때 사용한다.
+transition 애니메이션을 넣어줄때
+
