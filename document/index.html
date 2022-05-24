@@ -20,7 +20,7 @@
 
         em {
             display: block;
-            color: rgb(0, 81, 255);
+            color: rgba(0, 97, 234, 0.954);
         }
     </style>
 </head>
@@ -40,7 +40,7 @@
             -->
             <a href="./doc/box01.html" target="_blank">box 01</a>
             <p>태그의 일반적인 성질에 대하여</p>
-            <em>margin, margin-left, margin-right, background color</em>
+            <em>margin: margin-left, margin-right / background color</em>
             <p>2022.05.17
             <p>
 
@@ -62,9 +62,9 @@
              -->
             <a href="./doc/box02.html" target="_blank">box 02</a>
             <p>박스의 기본 성질에 대하여</p>
-            <em>margin, padding, border, box-sizing</em>
+            <em>margin / padding / border / box-sizing</em>
             <p>2022.05.17</p>
-            <strong>★★★</strong>
+            <strong>★★★☆☆ 3</strong>
         </li>
 
         <li>
@@ -76,9 +76,9 @@
              -->
             <a href="./doc/box03.html" target="_blank">box 03</a>
             <p>박스의 기본 성질에 대하여(2)</p>
-            <em>figure, container, text-align, display:flex;, gap, flex </em>
+            <em>figure / container / text-align / display:flex; / gap / flex </em>
             <p>2022.05.17</p>
-            <strong>★★★★</strong>
+            <strong>★★★★☆ 4</strong>
         </li>
 
         <li>
@@ -96,9 +96,9 @@
 
             <a href="./doc/box04.html" target="_blank">box 04</a>
             <p>레이아웃의 기초 박스의 위치변경. display flex를 이용한 박스배열</p>
-            <em>display: flex;, margin:0 auto;, justify-content: space-between, center</em>
+            <em>display: flex; / margin:0 auto; / justify-content: space-between, center</em>
             <p>2022.05.18</p>
-            <strong>★★★★★</strong>
+            <strong>★★★★★ 5</strong>
         </li>
     </ol>
 
@@ -121,9 +121,9 @@
             <a href="./doc/position01.html" target="_blank">position의 기초</a>
             <p>포지션에 대해서</p>
             <p>2022.05.19</p>
-            <em>popup창, button, javascript-queryselector, addEventlistener, click, function, transform, transition,
-                position-static, relative, absolute, flexed</em>
-            <strong>★★★★★</strong>
+            <em>popup / button / javascript-queryselector, addEventlistener, click, function / transform / transition /
+                position-static;, relative;, absolute;, flexed;</em>
+            <strong>★★★★★ 5</strong>
         </li>
 
         <li>
@@ -146,8 +146,60 @@
             <a href="./doc/position02.html" target="_blank">position의 기초 응용</a>
             <p>포지션을 이용한 화면구현</p>
             <p>2022.05.19</p>
-            <em>span, position: flexed;, absolute;, transform: rotate;, transition, opacity </em>
-            <strong>★★★★★</strong>
+            <em>span, position: flexed;, absolute; / transform: rotate; / transition / opacity </em>
+            <strong>★★★★★ 5</strong>
+
+        </li>
+
+        <li>
+            <!--  Position 03 - 2022. 05. 20
+
+                 *position
+                  - fixed : 기준이 화면. 스크롤바 없다!!!
+                  - relative : 자신이 기준. 
+                  - absulute : 부모가 기준. 
+
+                  *display 
+                  - flex / gap / width / margin 으로 화면 중앙에 간격 띄워 배치함.
+                    ㄴ gap은 기본 30px이 표준+익스플로어에서 안 돌아간다.
+                    ㄴ container에서 사진 width 값도 기본적으로 1200px 설정.
+                  - block & inline-block 응용
+
+                 *javascript
+                  - 태그 맨 앞에 // 사용 시 무효화 됨.
+
+                 *hover
+                  - 마우스가 올라가고 이동할 때 사용하는 태그
+                  - ex) #event .container figure:hover img {transform: scale(2);}
+
+
+                 *transition 움직임 기능, transform: scale (); 확대&축소 기능 + 사이즈 변형 X
+                 *overflow: hidden; 영역 외 벗어나는 부분을 숨김처리.
+                 *border-radius 형태가 동그랗게 됨.
+
+                 *:: 
+                  - 웹 표준에 어긋나지 않게 건들 수 없는 선과 박스를 만들 수 있음.
+                  - vertical-align: middle 양쪽에 중간정렬로 만들어주는 태그
+
+                 * class id 
+                  - class id "이름" => 통과
+                   class id "이름, 이름2" => 잘못, 하나 이상은 쓸 수 없음.
+                
+                 *ICON - XEICON 표준 아이콘 사이트
+                  - 사용 시 @import ur ('링크') 써야 사용가능
+                  - 자주 사용되는 카테고리 모양 아이콘 : "xi-bars" 
+
+                 *FONT 
+                  - *Noto Sans Font : 폰트가 홀수있때 가장 가독성이 좋다.
+                                      14pt가 제일 구림
+             -->
+
+            <a href="./doc/position03.html" target="_blank">position의 화면 구현</a>
+            <p>포지션을 이용해 웹 페이지 구현 실습</p>
+            <p>2022.05.20</p>
+            <em>hover, position: relative;, absolute; / display:block, inline-block;, flex; / vertical-align /
+                javascript / icon / font / class id / overflow: hidden</em>
+            <strong>★★★★★ 5</strong>
 
         </li>
 

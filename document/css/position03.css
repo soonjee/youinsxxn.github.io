@@ -5,6 +5,7 @@ body {
     font-family: font-family: 'Noto Sans KR', sans-serif;
 }
 
+
 #event {
     padding: 100px 0;
     text-align: center;
@@ -20,37 +21,42 @@ body {
 
 
 #event h2 {
-    font-size: 21px;
+    font-size: 50px;
     font-weight: 700;
     margin: 0 0 10px 0;
 }
 
+
 #event h2::before {
     content: "";
     display: inline-block;
-    width: 100px;
+    width: 500px;
     height: 1px;
-    background: rgb(59, 15, 255);
+    background: #f00;
     margin: 0 10px;
     vertical-align: middle;
 }
+
 
 #event h2::after {
     content: "";
     display: inline-block;
-    width: 100px;
+    width: 500px;
     height: 1px;
-    background: rgb(59, 15, 255);
+    background: #f00;
     margin: 0 10px;
     vertical-align: middle;
 }
 
+
 #event p {
-    font-size: 15px;
-    font-weight: 300;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 550;
     margin: 0 0 30px 0;
     line-height: 1.4;
 }
+
 
 #event .container {
     display: flex;
@@ -59,10 +65,12 @@ body {
     margin: 0 auto;
 }
 
+
 #event img {
     max-width: 100%;
     transition: 0.5s;
 }
+
 
 #event figure {
     position: relative;
@@ -70,9 +78,11 @@ body {
     overflow: hidden;
 }
 
+
 #event .container figure:hover img {
     transform: scale(2);
 }
+
 
 #event figure a {
     position: absolute;
@@ -80,10 +90,11 @@ body {
     left: 0;
     display: inline-block;
     padding: 10px 30px;
-    background: #333;
+    background: rgb(193, 0, 0);
     color: #fff;
     transition: 0.5s;
 }
+
 
 #event figure:hover a {
     top: 0;
