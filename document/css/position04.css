@@ -1,0 +1,33 @@
+body {
+    background: #333;
+}
+
+.sinbal {
+    padding: 100px 0;
+}
+
+.sinbal>.case {
+    position: relative;
+    width: 809px;
+    /* background가 깔리는 경우는 특별한 경우에만 높이를 준다.
+       웬만하면 높이를 주지 않는다. */
+    height: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.sinbal .case ul {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transition: 1.2s;
+    transition-timing-function: cubic-bezier(1, -1.22, 0, .95);
+}
+
+.num {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    color: #fff;
+    font-size: 30px;
+}
