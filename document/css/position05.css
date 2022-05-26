@@ -1,0 +1,56 @@
+body {
+    background: rgb(120, 195, 225);
+}
+
+.smile {
+    position: absolute;
+    /* position:relative, absolute, fixed 모두 기준이 된다. */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background: rgb(255, 255, 255);
+    /* border-radius 도형 변형시키는 태그 */
+    border-radius: 50%;
+}
+
+.smile>li {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-top: 10px solid #333;
+    border-left: 10px solid #333;
+    transform: rotate(45deg);
+}
+
+.smile.active>li {
+    transform: rotate(225deg);
+}
+
+.smile>li:nth-child(1) {
+    top: 200px;
+    left: 100px;
+}
+
+.smile>li:nth-child(2) {
+    top: 200px;
+    right: 100px;
+}
+
+.smile>li:nth-child(3) {
+    bottom: 150px;
+    left: 225px;
+}
+
+.top_banner .cotainer {
+    height: 50px;
+    /* overflow :요소 중 넘치는 부분을 어떻게 보여줄 것인지 정하는 태그
+    그중에서 hidden은 넘치는 부분을 보여주지 않는다. */
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.top_banner .cotainer.active {
+    height: 0;
+}
