@@ -10,7 +10,7 @@
         a {
             font-size: 17pt;
             font-weight: 700;
-            color: darkcyan;
+            color: rgb(0, 124, 207);
         }
 
         p {
@@ -21,7 +21,17 @@
         em p {
             font-size: 13pt;
             font-weight: 600;
-            color: rgb(0, 82, 122);
+            color: rgb(25, 179, 133);
+        }
+
+
+        h1 {
+            font-size: 31pt;
+        }
+
+
+        h2 {
+            font-size: 25pt;
         }
     </style>
 </head>
@@ -105,6 +115,41 @@
                     column / inset</p>
             </em>
         </li>
+
+        <li>
+            <!-- 2020.06.07
+             * 폰트 자간 태그 letter-spacing: 1em;
+             * 정중앙 배치 태그 : align-items: center;
+             * 영어 자간은 띄우고, 한글 자간은 붙이는 게 가독성이 좋다.
+             * 투명도 정하는 태그
+                - background: rgba(?, ?, ?, 투명값);
+                - opacity
+
+             <section class="hover01">
+               - position : relative 로 figure에 기준을 잡아줌으로써
+                  position: absolute에 의해 붕 떠있던 box 속성들이 자리를 잡게 됨.
+               - transition: transform으로 부드럽게 이동
+               - transform: translateX(50px)으로 img를 이동
+
+            <section class="hover02">
+               - 테두리 border 
+               - ::after 과 ::before으로 transition 포함하여 기능주기
+
+            <section class="hover03">
+               - 테두리 ::after 과 ::before 사용하여 linear-gradient 그라디언트 컬러를 줌.
+               - ::after 과 ::before는 무조건 content:""; 값이 들어가야 작동한다.
+
+            -->
+            <a href="./doc/hover01.html" target="_blank">Hover</a>
+            <p>
+                hover를 이용해 position 더 알아보기
+            </p>
+            <em>
+                <p>position : relative, absolute / hover / transition / transform / letter-spacing / justify-content
+                    ::after , ::before </p>
+            </em>
+        </li>
+
 
     </ul>
 
