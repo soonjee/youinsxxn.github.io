@@ -6,11 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML BASIC</title>
+    <link rel="stylesheet" href="./css/index_reset.css">
     <style>
+        .container {
+            padding: 0 50px;
+        }
+
         a {
             font-size: 17pt;
             font-weight: 700;
-            color: rgb(0, 124, 207);
+            color: rgb(255, 179, 0);
         }
 
         p {
@@ -21,108 +26,116 @@
         em p {
             font-size: 13pt;
             font-weight: 600;
-            color: rgb(25, 179, 133);
+            color: rgb(54, 128, 198);
+            padding-bottom: 20px;
+            border-bottom: 2.4px dashed rgba(57, 57, 57, 0.3);
         }
 
 
         h1 {
             font-size: 31pt;
+            color: rgb(0, 102, 235);
+            padding-bottom: 50px;
         }
 
 
         h2 {
             font-size: 25pt;
+            color: rgb(0, 0, 0);
         }
     </style>
 </head>
 
 
 <body>
-    <h1>HTML BASIC</h1>
-    <hr />
-    <h2>기본 박스 : box-model</h2>
-    <ul>
-        <li>
-            <a href="./doc/box01.html" target="_blank">기본 박스 01</a>
-            <p>
-                기본적인 박스의 성질에 대한 이해 / width는 늘어나는 성질을 가지고 있다.
-            </p>
-            <em>
-                <p>width height padding margin</p>
-            </em>
-        </li>
-        <li>
-            <a href="./doc/box02.html" target="_blank">기본 박스 02</a>
-            <p>선택자에 대한 이해</p>
-        </li>
+    <h1><i class=" xi-bookmark"></i>HTML BASIC</h1>
+    <div class="container">
+        <h2><i class="xi-library-books-o"></i>기본 박스 : box-model</h2>
+        <ul>
+            <li>
+                <a href="./doc/box01.html" target="_blank">기본 박스 01</a>
+                <p>
+                    기본적인 박스의 성질에 대한 이해 / width는 늘어나는 성질을 가지고 있다.
+                </p>
+                <em>
+                    <p>width height padding margin</p>
+                </em>
+            </li>
+            <li>
+                <a href="./doc/box02.html" target="_blank">기본 박스 02</a>
+                <p>선택자에 대한 이해</p>
+            </li>
 
 
-    </ul>
+        </ul>
 
-    <br />
+        <br />
 
-    <h2>POSITION </h2>
-    <ul>
-        <li>
-            <a href="./doc/multi_menu01.html" target="_blank">기본 멀티메뉴 01</a>
-            <p>
-                포지션에 대한 기본적인 이해
-            </p>
-            <em>
-                <p>position / relative / absolute / display / block / flex / hover / ::before, ::after - content</p>
-            </em>
-        </li>
+        <h2><i class="xi-library-books-o"></i>POSITION </h2>
+        <ul>
+            <li>
+                <a href="./doc/multi_menu01.html" target="_blank">기본 멀티메뉴 01</a>
+                <p>
+                    포지션에 대한 기본적인 이해
+                </p>
+                <em>
+                    <p>position / relative / absolute / display / block / flex / hover / ::before, ::after - content</p>
+                </em>
+            </li>
 
-        <li>
-            <a href="./doc/multi_menu02.html" target="_blank">기본 멀티메뉴 02</a>
-            <p>
-                포지션에 대한 기본적인 이해 & 부드럽게 나타내기
-            </p>
-            <em>
-                <p>position / relative / absolute / display / block / flex / hover / ::before, ::after - content <br />
-                    opacity / visibility: visible, hidden / transition / border-radius / transform: translate,
-                    rotate</p>
-            </em>
-        </li>
+            <li>
+                <a href="./doc/multi_menu02.html" target="_blank">기본 멀티메뉴 02</a>
+                <p>
+                    포지션에 대한 기본적인 이해 & 부드럽게 나타내기
+                </p>
+                <em>
+                    <p>position / relative / absolute / display / block / flex / hover / ::before, ::after - content
+                        <br />
+                        opacity / visibility: visible, hidden / transition / border-radius / transform: translate,
+                        rotate
+                    </p>
+                </em>
+            </li>
 
-        <li>
-            <a href="./doc/position01.html" target="_blank">Position & Sticky (1)</a>
-            <p>
-                정리된 포지션에 Sticky 얹기
-            </p>
-            <em>
-                <p>position : relative, absolute / text-align / box-sizing: border-box / </p>
-            </em>
-        </li>
+            <li>
+                <a href="./doc/position01.html" target="_blank">Position & Sticky (1)</a>
+                <p>
+                    정리된 포지션에 Sticky 얹기
+                </p>
+                <em>
+                    <p>position : relative, absolute / text-align / box-sizing: border-box / </p>
+                </em>
+            </li>
 
-        <li>
-            <a href="./doc/position02.html" target="_blank">Position & Sticky (2)</a>
-            <p>
-                Sticky에 대하여
-            </p>
-            <em>
-                <p>position : sticky</p>
-            </em>
-        </li>
+            <li>
+                <a href="./doc/position02.html" target="_blank">Position & Sticky (2)</a>
+                <p>
+                    Sticky에 대하여
+                </p>
+                <em>
+                    <p>position : sticky</p>
+                </em>
+            </li>
 
-        <li>
-            <a href="./doc/position03.html" target="_blank">Position & Sticky (3)</a>
-            <p>
-                Sticky 이용하여 웹 페이지 제작하기
-            </p>
-            <em>
-                <p>position / display / sticky / z-index / filter: grayscale, brightness / align-items / flex-direction:
-                    column / inset</p>
-            </em>
-        </li>
+            <li>
+                <a href="./doc/position03.html" target="_blank">Position & Sticky (3)</a>
+                <p>
+                    Sticky 이용하여 웹 페이지 제작하기
+                </p>
+                <em>
+                    <p>position / display / sticky / z-index / filter: grayscale, brightness / align-items /
+                        flex-direction:
+                        column / inset</p>
+                </em>
+            </li>
 
-        <li>
-            <!-- 2020.06.07
+            <li>
+                <!-- 2020.06.07
              * 폰트 자간 태그 letter-spacing: 1em;
              * 정중앙 배치 태그 : align-items: center;
              * 영어 자간은 띄우고, 한글 자간은 붙이는 게 가독성이 좋다.
              * 투명도 정하는 태그
-                - background: rgba(?, ?, ?, 투명값);
+                - background: rgba(0, 0, 0, 투명값);
                 - opacity
 
              <section class="hover01">
@@ -140,34 +153,82 @@
                - ::after 과 ::before는 무조건 content:""; 값이 들어가야 작동한다.
 
             -->
-            <a href="./doc/hover01.html" target="_blank">Hover</a>
-            <p>
-                hover를 이용해 position 더 알아보기
-            </p>
-            <em>
-                <p>position : relative, absolute / hover / transition / transform / letter-spacing / justify-content
-                    ::after , ::before </p>
-            </em>
-        </li>
+                <a href="./doc/hover01.html" target="_blank">Hover</a>
+                <p>
+                    hover를 이용해 position 더 알아보기
+                </p>
+                <em>
+                    <p>position : relative, absolute / hover / transition / transform / letter-spacing / justify-content
+                        ::after , ::before </p>
+                </em>
+
+            </li>
 
 
-    </ul>
+        </ul>
 
-    <br />
+        <br />
 
-    <h2>DISPLAY</h2>
+        <h2><i class="xi-library-books-o"></i>DISPLAY</h2>
+        <ul>
+            <li>
+                <a href="./doc/display01.html" target="_blank">Display</a>
+                <p>
+                    Display에 대하여
+                </p>
+                <em>
+                    <p>display: none, inline, inline-block, block</p>
+                </em>
 
-    <ul>
-        <li>
-            <a href="./doc/display01.html" target="_blank">Display</a>
-            <p>
-                Display에 대하여
-            </p>
-            <em>
-                <p>display: none, inline, inline-block, block</p>
-            </em>
+        </ul>
 
-    </ul>
+        <h2><i class="xi-library-books-o"></i>GRID SYSTEM</h2>
+        <ul>
+            <li>
+                <!-- 2020.06.07
+                * PSD 
+                    - RGB , 8비트
+                    - 영문자간 : 넓게 / 한글자간 : 좁게 추천*
+                    - view - New Guide layout - ( number : 12 / Gutter 30px )
+
+                    *단축키
+                        - 안내선 : ctrl + ; 
+                        - 화면만 보기 : Tab키
+                        - 웹으로 저장 : Ctrl + Alt + Shift + S    
+                -->
+                <a href="./doc/psdtohtml01.html" target="_blank">Psd to Html</a>
+                <p>
+                    PSD 그리드시스템 이해 & 시안 연습
+                </p>
+                <em>
+                    <p>display:flex; / letter-spacing / margin / padding </p>
+                </em>
+
+        </ul>
+
+        <h2><i class="xi-library-books-o"></i>Pseudo Element</h2>
+        <ul>
+            <li>
+                <!-- 2020.06.07
+                * ::before ::after 가상요소를 사용할 땐 꼭 content:""; 를 사용해줘야 적용이 된다.
+                *섹션이 많을 때 수정 빠르게 하는 방법
+                :nth-child(even)는 짝수번째 엘리먼트 or :nth-child(odd) 홀수번째 엘리먼트
+                *아이콘 복붙사이트 font awesome cheatsheet
+                 ㄴ https://fontawesome.com/v5/cheatsheet    
+
+                -->
+
+                <a href="./doc/Pseudo_element01.html" target="_blank">가상요소 선택자 01</a>
+                <p>
+                    가상요소에 대해 알아보자
+                </p>
+                <em>
+                    <p> ::before ::after / :nth-child(even) 짝수, :nth-child(odd) 홀수 </p>
+                </em>
+
+        </ul>
+    </div>
+
 
 </body>
 
