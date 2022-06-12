@@ -1,0 +1,35 @@
+.basic01 {
+    background: #fff;
+}
+
+
+.basic01 h2 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 50px 50px 50px;
+    width: 1200px;
+    font-size: 139px;
+    font-weight: 800;
+}
+
+.basic01 p {
+    margin: 0 auto;
+    padding: 0 0 70px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.basic01 .container {
+    background: linear-gradient(to left,#b2eeae,#949de9);
+    display: flex;
+    margin: 0 auto;
+    padding: 100px 0 100px 0;
+    gap: 0.5px;
+}
+
+.basic01 figure {
+    flex: 1;
+}

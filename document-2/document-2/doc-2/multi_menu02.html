@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다단메뉴 정복하기</title>
+    <style>
+        * {
+            list-style: none;
+        }
+
+        .header {
+            background: #fae3e3;
+            line-height: 100px;
+        }
+
+        /* 순서대로 하자.. 제발
+        display:felx 로 정렬한 뒤
+        와이드값 1200px로 사이즈 준다.
+        그 뒤에 중간으로 배치해주는 margin:0 auto; 값을 주고
+        사이 간격이 동일하게 배치되게 justify-content: space-between.
+        */
+        .header .container {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+
+        /* 꼭 다단메뉴에서는 nav를 이용해 감싸줄 것... 
+        태그 단축해서 쓰자!!! ul>li*5>a{manu0&}  */
+        .header nav>ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        .main_visual {
+            width: 100%;
+            height: 500px;
+            background: #ff0;
+        }
+
+        .footer {
+            padding: 30px;
+            text-align: center;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="container">
+                <h1>
+                    LOGO
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="">menu01</a></li>
+                        <li><a href="">menu02</a></li>
+                        <li><a href="">menu03</a></li>
+                        <li><a href="">menu04</a></li>
+                        <li><a href="">menu05</a></li>
+                        <li><a href="">menu06</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main_visual">
+            내가 메인이다.
+        </main>
+        <footer class="footer">
+            &copy; soonji
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
